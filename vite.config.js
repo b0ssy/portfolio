@@ -8,10 +8,5 @@ export default ({ mode }) => {
 
   return defineConfig({
     plugins: [react()],
-    server: {
-      proxy: {
-        "/v1/login": `${process.env.VITE_PROXY_BACKEND ?? ""}`,
-      },
-    },
   });
 };
