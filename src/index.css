@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+@layer base {
+  body {
+    @apply bg-base-50 dark:bg-base-900;
+  }
+  
+  .header {
+    @apply bg-base-100 dark:bg-base-800;
+  }
+  
+  .paper {
+    @apply bg-base-100 dark:bg-base-800 shadow-lg rounded-md;
+  }
+  
+  .divider {
+    @apply h-px bg-base-300 dark:bg-base-600;
+  }
+  .divider-border {
+    @apply border border-base-300 dark:border-base-600;
+  }
+  
+  .text {
+    @apply text-black dark:text-white;
+  }
+  .text-dim {
+    @apply text-base-600 dark:text-base-300;
+  }
+  .text-disabled {
+    @apply text-base-500 dark:text-base-400;
+  }
+  .text-error {
+    @apply text-error-400;
+  }
+  
+  .input {
+    @apply p-2 rounded-lg bg-white dark:bg-base-700 dark:text-base-50 ring-2 ring-base-200 dark:ring-base-600 enabled:hover:ring-base-400 enabled:hover:dark:ring-base-500 enabled:focus:ring-base-400 enabled:focus:dark:ring-base-500 focus:outline-none disabled:bg-white disabled:text-disabled;
+  }
+  .input-error {
+    @apply p-2 rounded-lg bg-white dark:bg-base-700 dark:text-base-50 ring-2 ring-error-400 dark:ring-error-400 enabled:hover:ring-error-500 enabled:hover:dark:ring-error-500 enabled:focus:ring-error-500 enabled:focus:dark:ring-error-500 focus:outline-none disabled:bg-white disabled:text-disabled;
+  }
+
+  .icon {
+    @apply dark:text-white;
+  }
+}
+
+:root {
+  font-family: "Source Code Pro", system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
